@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "bash",
+      "request": "launch",
+      "name": "Launch rc.iptables",
+      "program": "${workspaceFolder}/firewall/rc.iptables"
+    },
+    {
+      "type": "bash",
+      "request": "launch",
+      "name": "Launch pf.conf",
+      "program": "${workspaceFolder}/firewall/pf.conf"
+    },
+    {
+      "type": "bash",
+      "request": "launch",
+      "name": "Launch openvpn-client.conf",
+      "program": "${workspaceFolder}/vpn/openvpn-client.conf"
+    },
+    {
+      "type": "bash",
+      "request": "launch",
+      "name": "Launch openvpn-server.conf",
+      "program": "${workspaceFolder}/vpn/openvpn-server.conf"
+    },
+    {
+      "type": "bash",
+      "request": "launch",
+      "name": "Launch torrc",
+      "program": "${workspaceFolder}/tor/torrc"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "programPath",
+      "description": "Enter the path to the program you want to debug"
+    }
+  ]
+}
